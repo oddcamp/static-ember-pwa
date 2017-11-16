@@ -5,6 +5,20 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    'asset-cache': {
+      include: [
+        'assets/**/*',
+      ]
+    },
+    'esw-cache-fallback': {
+      patterns: [ '/' ],
+      version: '6' // Changing the version will bust the cache
+    },
+    prember: {
+      urls: [
+        '/',
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
