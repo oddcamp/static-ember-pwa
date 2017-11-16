@@ -4,6 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'static-ember-pwa',
+    podModulePrefix: 'static-ember-pwa/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
