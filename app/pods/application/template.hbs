@@ -3,6 +3,13 @@
 
   {{navbar-menu}}
 
+  {{#ember-notify closeAfter=50000 as |message close|}}
+    <div class="notification is-primary">
+      <button class="delete" {{action close}}></button>
+      {{message.text}}
+    </div>
+  {{/ember-notify}}
+
   {{outlet}}
 
   <!-- Hero footer: will stick at the bottom -->
