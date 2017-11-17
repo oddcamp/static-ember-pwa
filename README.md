@@ -1,7 +1,12 @@
 # static-ember-pwa
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple static [Ember](https://emberjs.com) progressive web app (PWA) built on top of
+Ember's
+[Fastboot](https://github.com/ember-fastboot/ember-cli-fastboot)
+using [Prember](https://github.com/ef4/prember).
+
+[Prember](https://github.com/ef4/prember) removes the need need for a server backend
+(like [Heroku](https://www.heroku.com)), deployed in [Surge.sh](https://static-ember-pwa.surge.sh) instead :)
 
 ## Prerequisites
 
