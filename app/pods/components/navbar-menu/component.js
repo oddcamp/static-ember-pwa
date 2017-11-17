@@ -1,15 +1,15 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { action, computed } from 'ember-decorators/object';
 
 export default Component.extend({
-  isActive: false,
-  isActiveClass: computed('isActive', function() {
-    return this.get('isActive') ? 'is-active' : '';
-  }),
 
-  actions: {
-    showMenu() {
-      this.toggleProperty('isActive');
-    }
+  @computed('isActive')
+  get isActiveClass() {
+    return this.get('isActive') ? 'is-active' : '';
+  },
+
+  @action
+  showMenu() {
+    this.toggleProperty('isActive');
   }
 });
