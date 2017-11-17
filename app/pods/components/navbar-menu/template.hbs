@@ -1,0 +1,19 @@
+<nav class="navbar is-transparent" role="navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      Static Ember PWA
+    </a>
+    <div class="navbar-burger burger {{isActiveClass}}" data-target="navbar-menu" onclick={{action "showMenu"}}>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="navbar-menu {{isActiveClass}}" id="navbar-menu">
+    <div class="navbar-end">
+      {{#link-to 'index' class="navbar-item" activeClass="is-active"}}Home{{/link-to}}
+      {{#link-to 'about' class="navbar-item" activeClass="is-active"}}About{{/link-to}}
+      <a href="https://github.com" class="navbar-item" target="_blank" rel="noopener">Github Repo</a>
+    </div>
+  </div>
+</nav>

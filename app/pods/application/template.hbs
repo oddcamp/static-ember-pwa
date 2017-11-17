@@ -1,32 +1,7 @@
 <section class="hero is-dark is-fullheight">
   <!-- Hero header: will stick at the top -->
-  <div class="hero-head">
-    <header class="nav">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item">
-            Static Ember PWA
-          </a>
-        </div>
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <div class="nav-right nav-menu">
-          <div class="nav-item">
-            {{#link-to 'index' activeClass="is-active"}}Home{{/link-to}}
-          </div>
-          <div class="nav-item">
-            {{#link-to 'about' activeClass="is-active"}}About{{/link-to}}
-          </div>
-          <div class="nav-item">
-            <a href="https://github.com" target="_blank" rel="noopener">Github Repo</a>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
+
+  {{navbar-menu}}
 
   {{outlet}}
 
